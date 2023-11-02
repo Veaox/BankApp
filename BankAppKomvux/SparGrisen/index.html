@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SparGrisen</title>
+
+
+    <!--Bilden är till fliken i webbläsaren-->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/np.png" type="image/x-icon" alt="Bilden är till fliken i webbläsaren" />
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main -->
+    <div class="container">
+      <div class="card">
+    <h2>Välkommen, <span class="cc">Christian</span></h2>
+    <main class="app">
+      <!-- Saldo -->
+      <div class="balance">
+        <div>
+          <p class="balance-label">Ditt aktuella saldo</p>
+         
+        </div>
+        <p class="balance-value">1000 kr</p>
+      </div>
+
+
+
+
+     <!-- Insättningar -->
+<div class="operation operation-deposit">
+
+  <h2>Insättning</h2>
+  <form class="form form-deposit">
+    <input id="deposit-amount" class="form-input form-input-deposit-amount" type="number" placeholder="Belopp" />
+    <button type="button" id="btn-deposit" class="form-btn form-btn-deposit">&rarr;</button>
+  </form>
+</div>
+
+
+<!-- Uttag -->
+<div class="operation operation-withdrawal">
+  <h2>Uttag</h2>
+  <form class="form form-withdrawal">
+    <input id="withdrawal-amount" class="form-input form-input-withdrawal-amount" type="number" placeholder="Belopp" />
+    <button type="button" id="btn-withdrawal" class="form-btn form-btn-withdrawal">&rarr;</button>
+  </form>
+</div>
+
+<a href="signin.html" class="btn-logout">Logga ut &rarr;</a>
+
+</div>
+</div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      &copy; <span class="copyright-year">2023</span>,
+      <strong>SparGrisen</strong> av Jimmy Lindqvist Björk - Alla rättigheter förbehållna.
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
